@@ -44,9 +44,9 @@
 	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li class="current"><a class="smoothscroll" href="#home" style="background-color: rgba(245, 245, 220, 0.8); border: 2px solid #8B4513; border-radius: 5px; padding: 5px 10px; margin: 0 5px;">Home</a></li>
+            <li><a class="smoothscroll" href="#about" style="background-color: rgba(245, 245, 220, 0.8); border: 2px solid #8B4513; border-radius: 5px; padding: 5px 10px; margin: 0 5px; color: black;">About</a></li>
+	         <li><a class="smoothscroll" href="#resume" style="background-color: rgba(245, 245, 220, 0.8); border: 2px solid #8B4513; border-radius: 5px; padding: 5px 10px; margin: 0 5px; color: black;">Resume</a></li>
             
             <!--<li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
@@ -55,10 +55,10 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">Hi, I'm Atmadeep Arya</h1>
-            <h3>I'm a <span>computer vision and robotics engineer</span> passionate about autonomous MAVs and ground vehicles.
-            Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <h1 class="responsive-headline" style="color: #3E4772; background-color: rgba(245, 245, 220, 1); padding: 10px; display: inline-block;">Hi, I'm Atmadeep Arya</h1>
+            <h3 style="color: #3E4772;background-color: beige; padding: 10px;">I'm a computer vision and robotics engineer passionate about autonomous MAVs and ground vehicles.
+            Let's <a class="smoothscroll" style="color: #964000;" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" style="color: #964000;href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
 				<li><a href="https://github.com/atmadeep" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -77,52 +77,38 @@
    <!-- About Section
    ================================================== -->
    <section id="about">
-
       <div class="row">
-
-         <div class="center">
-
-            <img src="images/atmadeep/atmadeep_1.jpg" alt="" />
-
+         <div class="three columns">
+            <img class="profile-pic" src="images/atmadeep/atmadeep_1.jpg" alt="Atmadeep Arya" />
+            
+            <div class="download">
+               <p>
+                  <a href="files/Resume.pdf" class="button"><i class="fa fa-download"></i>Resume</a>
+               </p>
+            </div>
          </div>
-
+         
          <div class="nine columns main-col">
-
             <h2>About Me</h2>
-			<p>
-            As a seasoned professional in the realm of robotics and autonomous systems, my career embodies a fusion of passion, expertise, and innovation. With a comprehensive background in robotics engineering, 
-            encompassing proficiency in ROS, optimization techniques, and a 
-            spectrum of programming languages like Python, C++, and 
-            frameworks including ONNXRuntime and Tensorflow, I've honed my skills
-             in crafting efficient, cutting-edge solutions.
-			</p>
+            <p>
+            I'm a computer vision engineer with a passion for building autonomous MAVs and ground vehicles. I'm currently working on object detection and other aspects of vision pipelines for drones and ground robots. My primary experience is in model optimization, with hands on experience in deployment on edge devices. 
+            </p>
 
             <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Atmadeep Arya</span><br>
-					
-						   <span>+91 9611948767</span><br>
-                     <span>aatmadeepaarya@gmail.com</span>
-					   </p>
-
+               <div class="columns">
+                  <h2>Technical Skills</h2>
+                  <p>ROS1, ROS2, Gazebo, ONNX and ONNXRuntime, C++14, Python3, Tensorflow 2.x, OpenCV 3.x and 4.x, Git and Github</p>
                </div>
+            </div>
 
-               <div class="columns download">
-                  <p>
-                     <a href="files/Resume.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
+            <div class="row">
+               <div class="columns">
+                  <h2>Interpersonal Skills</h2>
+                  <p>Adaptability, Problem Solving, Creativity, Humor, Communication</p>
                </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+            </div>
+         </div>
       </div>
-
    </section> <!-- About Section End-->
 
 
@@ -218,6 +204,25 @@
             <div class="row item">
 
                <div class="twelve columns">
+                  <h3>Arka Aerospace Pvt Ltd @ Hyderabad</h3>
+                  <p class="info">Computer Vision and Robotics Engineer <span>&bull;</span> <em class="date">January 2024 - Present</em></p>
+
+                  <p>
+                     <ol>
+                        <li>Constructed inference pipeline for edge devices using Pytorch, TensorRT, and Nvidia's DeepStream library to achieve speeds up to 120 FPS for custom object detection using YOLO models.</li>
+                        <li>Designed object detection and tracking models on edge devices using various YOLO models and custom trackers.</li>
+                        <li>Researched methods in data collection and cleaning for custom classes of objects from web and in-house data sources.</li>
+                        <li>Implemented and optimized computer vision algorithms for autonomous navigation systems.</li>
+                        <li>Collaborated with cross-functional teams to integrate vision solutions into robotics platforms.</li>
+                     </ol>
+                  </p>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
                   <h3>Multicoreware Pvt Ltd @ Chennai</h3>
                   <p class="info">Software engineer <span>&bull;</span> <em class="date">Feb 2022 - December 2023</em></p>
 
@@ -236,10 +241,12 @@
                   <p class="info">Machine learning engineer <span>&bull;</span> <em class="date">Feb 2021 - April 2021</em></p>
 
                   <p>
-                  My work revolved around working on speeding up traffic detection systems using python, customer face detection system using Dlib and opencv,
-				  managing web apps built using flask and django, and creating a news ticker reader system for live feed.
+                     <ol>
+                        <li>Optimized CNN model's inference for edge devices resulting in the adoption of better-suited multi-device options.</li>
+                        <li>Utilized Django and Flask to improve API functionality for client demos.</li>
+                        <li>Developed a news reader app for extracting headlines from news feeds using OpenCV and PyTesseract.</li>
+                     </ol>
                   </p>
-
                </div>
 
                <div class="twelve columns">
@@ -249,8 +256,8 @@
                   <p>
                      <ol>
                      <li>Designed object detection algorithm for an underwater ROV deployed on an onboard computer for client demo.</li>
-• Developed algorithms using libraries like NumPy and OpenCV for object detection, line following, and distance estimation.
-• Desigend the hardware for ground rover, supplemented with code for following a line using camera and light sensors.
+                     <li> Developed algorithms using libraries like NumPy and OpenCV for object detection, line following, and distance estimation. </li>
+                     <li> Desigend the hardware for ground rover, supplemented with code for following a line using camera and light sensors. </li>
                      </ol>
                   </p>
 
@@ -289,59 +296,30 @@
 
       </div> <!-- End Education -->
 
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Interpersonal</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-			<button type="button">Adaptability </button>
-			<button type="button">Problem Solving </button>
-			<button type="button">Creativity</button>
-			<button type="button">Humour</button>
-			<button type="button">Communication</button>
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Technical Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-			<button type="button">ROS1 </button>
-			<button type="button">ROS2 </button>
-			<button type="button">Gazebo</button>
-			<button type="button">ONNX and ONNXRuntime</button>
-			<button type="button">C++14</button>
-			<button type ="button">Python3</button>
-			<button type="button">Tensorflow 2.x</button>
-			<button type="button">OpenCV 3.x and 4.x</button>
-			<button type="button">Git and Github</button>
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
    </section> <!-- Resume Section End-->
 
  <!--
  -->
-  
 
-
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+      <div class="row">
+         <div class="twelve columns">
+            <h2>Contact Details</h2>
+            <p class="address">
+               <span>Atmadeep Arya</span><br>
+               <span>+91 9611948767</span><br>
+               <span>aatmadeepaarya@gmail.com</span>
+            </p>
+         </div>
+      </div>
+   </section> <!-- Contact Section End-->
 
    <!-- footer
    ================================================== -->
    <footer>
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
-            </ul>
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+      <!-- ... your existing footer content ... -->
    </footer> <!-- Footer End-->
 
    <!-- Java Script
